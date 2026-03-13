@@ -1,0 +1,24 @@
+/* -----------------------------
+   Общие стили
+-------------------------------*/
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffe6f0; /* светло-розовый фон */
+    margin: 0;
+    padding: 0;
+}
+a { text-decoration: none; color: #d63384; }
+a:focus { outline: 3px solid #ff66b3; background-color: #fff0f5; }
+.skip-link { position: absolute; top: -40px; left: 0; background: #ff99cc; color: white; padding: 8px; z-index: 100; transition: top 0.3s; }
+.skip-link:focus { top: 0; }
+nav { display: flex; justify-content: space-around; align-items: center; background-color: #ff66b3; padding: 15px; }
+nav a { color: white; font-weight: bold; padding: 8px 15px; border-radius: 5px; transition: background 0.3s, transform 0.3s; }
+nav a:hover { background-color: #ff3385; transform: scale(1.1); }
+h1, h2, h3 { text-align: center; color: #d63384; margin-top: 20px; }
+main { padding: 20px; }
+.grid-container { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+img { width: 100%; max-width: 400px; border: 5px solid #ff99cc; border-radius: 15px; padding: 5px; box-sizing: border-box; transition: transform 0.3s, box-shadow 0.3s; }
+img:hover { transform: scale(1.05); box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+.flex-container { display: flex; justify-content: space-around; flex-wrap: wrap; }
+.flex-container img:nth-child(even) { border-radius: 50px; }
+.flex-container img:nth-child(odd) { border-radius: 15px; }
